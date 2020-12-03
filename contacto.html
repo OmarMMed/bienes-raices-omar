@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienes Raices</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="contenedor  contenido-header">
+            <div class="barra">
+                <a href="/">
+                    <img src="img/logo.svg" alt="Logo principal">
+                </a>
+                <nav class="navegacion">
+                    <a href="nosotros.html">Nosotros</a>
+                    <a href="anuncios.html">Anuncios</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="contacto.html">Contacto</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- Fin Header -->
+    <main class="">
+        <h1 class="fw-300 centrar-texto">Contacto</h1>
+        <img src="img/destacada3.jpg" alt="Logo principal" class="contacto-imagen">
+        <div class="contenedor">
+            <h1 class="fw-300 centrar-texto">Llena el Formulario de Contacto</h1>
+            <form action="#">
+                <fieldset>
+                    <legend><h2>Información Personal</h2></legend>
+                    <div>
+                        <label for="usuario">Nombre:</label><br>
+                        <input id="usuario" type="text" name="usuario" value="Tu Nombre" class="text">
+                    </div><br>
+                    <div>
+                        <label for="email">E-mail:</label>
+                        <input id="email" type="text" name="email" value="Tu Email"class="text">
+                    </div><br>
+                    <div>
+                        <label for="telefono">Teléfono:</label>
+                        <input id="telefono" type="text" name="telefono" value="Teléfono"class="text">
+                    </div><br>
+                    <div>
+                        <label for="mensaje">Mensaje:</label><br>
+                        <textarea name="textarea" rows="10" cols="50"></textarea>
+                    </div><br>
+                </fieldset>
+            </form>
+            <form action="#">
+                <fieldset>
+                    <legend><h2>Información sobre Propiedad</h2></legend>
+                    <div>
+                        <label for="propiedad_venta">Vende o Compra:</label><br>
+                            <select id="venta_compra"name="venta_compra">
+                                <option value="" selected="selectd">--Seleccione--</option>
+                                <option value="venta">Venta</option>
+                                <option value="compra">Compra</option>
+                            </select>
+                    </div><br>
+                    <div>
+                        <label for="presupuesto">Presupuesto:</label>
+                        <input id="presupuesto" type="text" name="presupuesto"class="text">
+                    </div>
+                </fieldset>
+            </form>
+            <form action="#">
+                <fieldset>
+                    <legend><h2>Contacto</h2></legend>
+                    <div>
+                        <label>Como desea ser Contactado:</label><br>
+                        <label>Teléfono:</label><br>
+                        <input type="radio" name="contacto" value="telefono" /><br>
+                        <label>Correo:</label><br>
+                        <input type="radio" name="contacto" value="correo"  />
+                    </div><br>
+                    <div>
+                        <label>Si Eligió Teléfono, elija la Fecha y Hora</label><br>
+                        <label>Fecha:</label><br>
+                        <input type="date" name="cita" class="text"><br>
+                        <label>Hora:</label><br>
+                        <input type="time" name="cita" class="text"><br><br>
+                    </div>
+                    <input type="submit" value="ENVIAR" class="bottom">
+                </fieldset>
+            </form>
+            <br>
+        </div>
+    </main>
+    <!-- Fin Sección Conocer Sobre Nosotros -->
+    <footer class="site-footer seccion">
+        <div class="contenedor contenedor-footer">
+            <nav class="navegacion">
+                <a href="nosotros.html">Nosotros</a>
+                <a href="anuncios.html">Anuncios</a>
+                <a href="blog.html">Blog</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+            <p class="copyright">Todos Los Derechos Redervados &copy;</p>
+        </div>
+    </footer>
+</body>
+</html>
